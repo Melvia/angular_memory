@@ -1,0 +1,8 @@
+<div class="card" (click)="cardClicked.emit()" [@cardFlip]="data.state">
+  <div class="face back">
+    
+    </div>
+  <div class="face front">
+    <img [src]="'assets/fronts/' + data.imageId" />
+  </div>
+</div>
